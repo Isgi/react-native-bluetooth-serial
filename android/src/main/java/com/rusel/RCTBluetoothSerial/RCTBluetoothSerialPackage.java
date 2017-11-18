@@ -19,8 +19,9 @@ public class RCTBluetoothSerialPackage implements ReactPackage {
         modules.add(new RCTBluetoothSerialModule(reactContext));
         return modules;
     }
-
-    @Override
+    
+    // remove override for fixing bug
+    // @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
